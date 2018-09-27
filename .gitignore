@@ -1,4 +1,4 @@
 build/
 dist/
 sparkutils.egg-info/
-sparkutils/__init__.pyc
+*.pyc

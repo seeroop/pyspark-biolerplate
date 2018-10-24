@@ -1,5 +1,5 @@
-from sparkutils import session
+import sparkutils.session as spus
 
-spark = session.getInstance("sparkutlis")
+spark = spus.getYarn("sparkutlis")
 spark.sql("show tables").show()
 

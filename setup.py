@@ -7,4 +7,6 @@ setup(name='sparkutils',
       author='Matt Hardy',
       author_email='mhardy@example.com',
       packages=['sparkutils'],
+      test_suite='nose.collector',
+      tests_require=['nose'],
       zip_safe=False)

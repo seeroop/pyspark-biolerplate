@@ -1,14 +1,20 @@
-# sparkutils
+# pyspark boilerplate
+Based on [https://python-packaging.readthedocs.io/en/latest/index.html](python-packaging)
 
-
-## build package
-python setup.py sdist
 
 ## build source distribution
+python setup.py sdist
+
+## build source distribution as tgz
 spark2-submit --py-files=dist/sparkutils-0.1.tar.gz run.py
 
+## build source distribution as zip
+python setup.py sdist --format=zip
 
-## build binary distribution
+## build source distribution
+spark2-submit --py-files=dist/sparkutils-0.1.zip run.py
+
+## build binary egg distribution
 python setup.py bdist_egg
 
 ## run package

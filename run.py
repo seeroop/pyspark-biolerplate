@@ -1,6 +1,5 @@
-reload(session)
-
 from sparkutils import session
 
-spark = session.getOrCreate("sparkutils")
+spark = session.getInstance("sparkutlis")
 spark.sql("show tables").show()
+

@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 
-def getOrCreate(name):
+def getInstance(name):    
     return SparkSession.builder\
         .master("yarn")\
         .appName(name)\

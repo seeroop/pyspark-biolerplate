@@ -1,5 +1,5 @@
 # pyspark boilerplate
-Based on (https://python-packaging.readthedocs.io/en/latest/index.html)[python-packaging]
+Based on [python-packaging](https://python-packaging.readthedocs.io/en/latest/index.html)
 
 
 ## build source distribution

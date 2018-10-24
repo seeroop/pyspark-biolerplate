@@ -1,3 +1,5 @@
+reload(session)
+
 from sparkutils import session
 
 spark = session.getOrCreate("sparkutils")

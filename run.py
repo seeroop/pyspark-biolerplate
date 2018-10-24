@@ -1,4 +1,4 @@
 from sparkutils import session
 
-spark = session.get_spark()
+spark = session.getOrCreate("sparkutils")
 spark.sql("show tables").show()

@@ -8,8 +8,6 @@ SPARK_HOME=/opt/cloudera/parcels/SPARK2/lib/spark2 \
 PYTHONPATH=$PYTHONPATH:$SPARK_HOME/python/lib/pyspark.zip \
 PYTHONPATH=$PYTHONPATH:$SPARK_HOME/python/lib/py4j-0.10.7-src.zip \
 python setup.py test
-
-PYTHONPATH=$PYTHONPATH:/opt/cloudera/parcels/SPARK2/lib/spark2/python/lib/pyspark.zip:/opt/cloudera/parcels/SPARK2/lib/spark2/python/lib/py4j-0.10.7-src.zip python setup.py test
 ```
 
 ## build examples

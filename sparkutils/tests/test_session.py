@@ -1,3 +1,4 @@
+import traceback
 from unittest import TestCase
 from sparkutils import session as spus
 
@@ -10,6 +11,5 @@ class TestSession(TestCase):
       self.assertEquals(count,4)
     except Exception as e:
       print "Failed to create Spark Session"
-      import traceback
       traceback.print_exc()
       self.assertTrue(False)

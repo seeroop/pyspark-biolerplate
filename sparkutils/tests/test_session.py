@@ -8,6 +8,8 @@ class TestSession(TestCase):
       spark = spus.getLocal("sparkutils")
       count = spark.sparkContext.parallelize([1, 2, 3, 4]).count()
       self.assertEquals(count,4)
-    except:
+    except Exception as e:
       print "Failed to create Spark Session"
+      import traceback
+      traceback.print_exc()
       self.assertTrue(False)
